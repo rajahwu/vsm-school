@@ -1,0 +1,136 @@
+{
+  "version": "1.0.0",
+  "name": "VSM Priority Style System",
+  "description": "Design tokens for Visual Systems Mapping diagrams and assets",
+  "colors": {
+    "priority": {
+      "p1-critical": {
+        "value": "#DC2626",
+        "description": "Critical path, blockers, urgent items"
+      },
+      "p2-high": {
+        "value": "#F59E0B",
+        "description": "High priority, important milestones"
+      },
+      "p3-medium": {
+        "value": "#3B82F6",
+        "description": "Standard tasks, normal flow"
+      },
+      "p4-low": {
+        "value": "#6B7280",
+        "description": "Nice-to-have, future considerations"
+      }
+    },
+    "status": {
+      "complete": {
+        "value": "#10B981",
+        "description": "Done, shipped, validated"
+      },
+      "in-progress": {
+        "value": "#3B82F6",
+        "description": "Currently active"
+      },
+      "blocked": {
+        "value": "#DC2626",
+        "description": "Waiting on dependency"
+      },
+      "not-started": {
+        "value": "#9CA3AF",
+        "description": "Queued, not yet begun"
+      }
+    },
+    "lanes": {
+      "strategy": {
+        "value": "#8B5CF6",
+        "description": "Planning, decisions, direction"
+      },
+      "design": {
+        "value": "#EC4899",
+        "description": "Visual work, UX, creative"
+      },
+      "development": {
+        "value": "#3B82F6",
+        "description": "Building, coding, implementation"
+      },
+      "operations": {
+        "value": "#10B981",
+        "description": "Launch, maintenance, support"
+      }
+    },
+    "neutral": {
+      "background": "#FFFFFF",
+      "surface": "#F9FAFB",
+      "border": "#E5E7EB",
+      "text-primary": "#111827",
+      "text-secondary": "#6B7280"
+    }
+  },
+  "shapes": {
+    "milestone": {
+      "type": "diamond",
+      "description": "Key decision points or deliverables"
+    },
+    "task": {
+      "type": "rectangle",
+      "description": "Standard work items"
+    },
+    "decision": {
+      "type": "diamond",
+      "description": "Branch points requiring choice"
+    },
+    "start-end": {
+      "type": "rounded-rectangle",
+      "description": "Process boundaries"
+    },
+    "dependency": {
+      "type": "circle",
+      "description": "External dependencies or blockers"
+    }
+  },
+  "typography": {
+    "heading": {
+      "family": "Inter, system-ui, sans-serif",
+      "weight": 700,
+      "size": "18px"
+    },
+    "label": {
+      "family": "Inter, system-ui, sans-serif",
+      "weight": 600,
+      "size": "14px"
+    },
+    "body": {
+      "family": "Inter, system-ui, sans-serif",
+      "weight": 400,
+      "size": "12px"
+    },
+    "caption": {
+      "family": "Inter, system-ui, sans-serif",
+      "weight": 400,
+      "size": "10px"
+    }
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px"
+  },
+  "connectors": {
+    "arrow": {
+      "stroke-width": "2px",
+      "style": "solid",
+      "description": "Flow direction, sequence"
+    },
+    "dashed": {
+      "stroke-width": "2px",
+      "style": "dashed",
+      "description": "Optional path, weak dependency"
+    },
+    "dotted": {
+      "stroke-width": "2px",
+      "style": "dotted",
+      "description": "Future state, planned connection"
+    }
+  }
+}
