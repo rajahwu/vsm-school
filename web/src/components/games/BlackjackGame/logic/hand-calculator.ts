@@ -1,4 +1,4 @@
-import { Card } from './deck';
+import type { Card } from './deck';
 
 export function calculateHandValue(hand: Card[]): number {
   let total = 0;

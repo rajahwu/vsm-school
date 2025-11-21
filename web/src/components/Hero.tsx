@@ -1,27 +1,17 @@
 // src/components/Hero.tsx
-import { Button } from '@/components/ui/button' 
-import mountainLogo from '../assets/images/mountain_logo_20250925_221253.png'
-import mistyBackground from '../assets/images/misty_background_20250925_221255.png'
+import { Button } from '@/components/ui/button'
 
 export default function Hero() {
   return (
     <section
-      className="relative w-full"
-      style={{
-        backgroundImage: `url(${mistyBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      className="relative w-full bg-gradient-to-b from-slate-900 to-slate-800"
     >
       {/* semi-transparent overlay if needed */}
       <div className="bg-background/70">
         <div className="container mx-auto flex flex-col items-center justify-center py-24 text-center">
-          <img
-            src={mountainLogo}
-            alt="VSM Schools Logo"
-            className="h-20 w-20 mx-auto"
-          />
+          <div className="h-20 w-20 mx-auto bg-primary/20 rounded-full flex items-center justify-center text-2xl">
+            VSM
+          </div>
           <h1 className="mt-6 text-4xl font-heading text-primary md:text-6xl">
             Climb Higher. See Clearer.
           </h1>

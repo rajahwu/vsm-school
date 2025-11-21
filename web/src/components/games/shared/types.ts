@@ -32,6 +32,4 @@ export interface GameProps {
   theme?: 'light' | 'dark'
 }
 
-export interface GameComponent {
-  (props: GameProps): JSX.Element
-}
+export type GameComponent = React.FC<GameProps>

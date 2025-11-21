@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import VigilantGameComponent from './Game';
 import './Game.css';
 import type { GameProps, GameState } from '../shared/types';
@@ -6,14 +6,10 @@ import type { GameProps, GameState } from '../shared/types';
 export function VigilantGame({
   onStateChange,
   showDebugInfo = false,
-  isPaused = false,
-  onReset,
 }: GameProps) {
-  const [gameState, setGameState] = useState<GameState>({
-    // Vigilant game manages its own state internally
-    // We'll add state extraction in future iteration
+  const gameState: GameState = {
     phase: 'playing',
-  });
+  };
 
   // Notify parent of state changes
   useEffect(() => {

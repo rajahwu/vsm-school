@@ -1,4 +1,4 @@
-import { Card } from '../game-logic/deck';
+import type { Card } from '../logic/deck';
 import CardDisplay from './Card';
 
 export default function Hand({ cards, label }: { cards: Card[]; label: string }) {

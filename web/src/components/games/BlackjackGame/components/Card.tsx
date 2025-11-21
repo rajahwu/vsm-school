@@ -1,4 +1,4 @@
-import { Card } from '../game-logic/deck';
+import type { Card } from '../logic/deck';
 
 export default function CardComp({ card }: { card: Card }) {
   const symbol = { hearts: '♥', diamonds: '♦', clubs: '♣', spades: '♠' }[card.suit];

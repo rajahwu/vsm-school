@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import useGame from './hooks/useGame';
-import { Controls, Hand, Message, Stats, StrategyTip } from './components';
+import { Controls, Hand, Message } from './components';
 import type { GameProps, GameState } from '../shared/types';
 
 export function BlackjackGame({
@@ -9,14 +9,13 @@ export function BlackjackGame({
   isPaused = false,
   onReset,
 }: GameProps) {
-  const { 
-    playerHand, 
-    dealerHand, 
-    message, 
-    hit, 
-    stand, 
-    startGame, 
-    getStrategy 
+  const {
+    playerHand,
+    dealerHand,
+    message,
+    hit,
+    stand,
+    startGame
   } = useGame();
 
   // Expose game state for lessons
@@ -52,7 +51,6 @@ export function BlackjackGame({
       />
       
       <Message message={message} />
-      <StrategyTip tip={getStrategy()} />
 
       {showDebugInfo && (
         <div className="mt-4 p-4 bg-black bg-opacity-50 rounded">

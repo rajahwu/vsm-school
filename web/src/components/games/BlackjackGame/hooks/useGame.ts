@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Card, createDeck, shuffle } from '../game-logic/deck';
-import { calculateHandValue } from '../game-logic/hand-calculator';
-import { playDealer } from '../game-logic/dealer';
+import { createDeck, shuffle } from '../logic/deck';
+import type { Card } from '../logic/deck';
+import { calculateHandValue } from '../logic/hand-calculator';
+import { playDealer } from '../logic/dealer';
 
 type GameMessage = string;
 
