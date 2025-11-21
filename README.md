@@ -1,75 +1,43 @@
-# VSM School
+# VSM School - Visual Systems Mastery
 
-**Visual Systems Mapping** - Turn complex projects into clear, actionable diagrams.
+One line: Teach systems thinking with one-screen, repeatable rituals.
 
----
+## Quick Start
 
-## Quickstart (5 min)
+1. Download [tokens.json](./tokens/vsm-tokens.json)
+2. Explore [Tyler Launch Journey](./examples/tyler/)
+3. Start [Week 1 Bootcamp](./bootcamp/week-01/)
 
-### 1. Get the Style System
-```bash
-curl -O https://raw.githubusercontent.com/rajahwu/vsm-school/main/tokens/vsm-tokens.json
-```
+## Repository Structure
 
-### 2. Pick a Template
-- **Journey Map** - Progress over time → `/templates/one-screen-journey-template.svg`
-- **Swimlane** - Parallel workstreams → `/templates/swimlane-basic-template.svg`
-- **Dependency Tree** - Blockers & prerequisites → `/templates/dependency-tree-template.svg`
+- `/bootcamp/` - 6-week training program
+- `/docs/guides/` - Learning guides & systems mapping
+- `/examples/` - Real project examples (Tyler, Dropframe, Gridline)
+- `/templates/` - Starter templates (SVG, Figma, printable)
+- `/tokens/` - Design system tokens
+- `/notion-templates/` - Database schemas for Notion
+- `/web/` - Interactive web app
+- `/scripts/` - Setup & utility scripts
 
-### 3. Apply Priority Colors
-| Priority | Color | Hex | Use For |
-|----------|-------|-----|---------|
-| P1 Critical | 🔴 | `#DC2626` | Blockers, urgent |
-| P2 High | 🟠 | `#F59E0B` | Important milestones |
-| P3 Medium | 🔵 | `#3B82F6` | Standard tasks |
-| P4 Low | ⚫ | `#6B7280` | Nice-to-have |
+## Examples
 
-### 4. Export & Ship
-- **Web/GitHub**: SVG
-- **Slides**: PNG @2x
-- **Print**: PDF 300dpi
+- **Tyler**: Launch journey with swimlane diagrams
+- **Dropframe**: Visual project management workflows
+- **Gridline**: Component-based design system
 
----
+## Bootcamp Program
 
-## What's Inside
+- [Week 1: Visual Literacy](./bootcamp/week-01/)
+- [Week 2: Tool Bootcamp](./bootcamp/week-02/)
+- [Week 3: Systems Thinking](./bootcamp/week-03/)
+- [Capstone](./bootcamp/capstone/)
 
-```
-/tokens/          → Design tokens (colors, shapes, typography)
-/templates/       → Blank diagram starters
-/examples/tyler/  → Complete worked example
-/docs/guides/     → How-to guides
-/notion-templates/→ Database schemas for Notion
-/assets/          → Visual alphabet reference
-```
+## Resources
 
----
-
-## See It In Action
-
-Check out the Tyler example: [`/examples/tyler/`](./examples/tyler/)
-
-- Launch journey diagram
-- Week-by-week swimlane
-- After-action review
-
----
-
-## Guides
-
-- [Quick Launch Guide](./docs/guides/quick-launch.md) - First diagram in 15 min
-- [Export Specifications](./docs/guides/export-specifications.md) - Output formats
-
----
-
-## For Educators
-
-Use `/notion-templates/` to set up:
-- Course database
-- Module tracking
-- Visual asset index
-
----
+- [Quick Launch Guide](./docs/guides/quick-launch/quick-launch.md)
+- [Systems Mapping Gallery](./docs/guides/systems-mapping/gallery/)
+- [Visual Index](./VISUAL_INDEX.md)
 
 ## License
 
-MIT
+See [LICENSE](./LICENSE)
